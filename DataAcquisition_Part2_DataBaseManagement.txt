@@ -1,0 +1,11 @@
+This file is an overview of the plan for database management.
+
+Due to the nature of this project I do not think there is a need for a complex database system because there really is only
+three important components to keep track of. I will be using a table called articles that contains all of the raw data from the Kaggle csv
+file I chose that has articles, headlines, and their associated stock tickers. Additionally, there will be a sentiment table to store 
+the sentiment analysis of article headlines from the articles table. Lastly, there will be a returns table that stores the stock ticker performance after
+the publication of all of the articles so I can properly classify the publisher based on their sentiment and the following stock performance.
+
+I do not have unstructured data assuming that the original creator of the data properly scraped the headline articles but this is something I am working on confirming.
+
+To see how the tables are connected please reference db_diagram.png in this repository.

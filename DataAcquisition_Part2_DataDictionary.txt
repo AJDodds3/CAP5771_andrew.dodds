@@ -1,0 +1,24 @@
+This file is an overview of the current status of the Data Dictionary for this project.
+
+- Table: Articles 
+    - This table is going to store all the data from my analyst ratins csv from Kaggle
+    - Variables:
+        - article id: Basically just an index to identify the article record. It does not have meaning for the purpose of building a model
+        - headline: This column contains all of the headlines associated with the financial articles that will be used in sentiment analysis
+        - url: Link to the actual article 
+        - publisher: Name of the publisher or author. This is important for classification I will be doing 
+        - published_at: Time of the publication of the article which is important to comparing to yfinance for performance
+        - ticker: Name of the stock the article is about, needed for classification
+- Table: Sentiment
+    - This table is going to store all information gathered from sentiment analysis from each of the articles
+    - Variables:
+        - article id: Same as the article id in the articles table for mapping
+        - sentiment score: Output from the model I end up decided to use from article headline
+        - sentiment label: Interpretation of the score for classification
+        - method: There are multiple types of sentiment analysis and I may try multiple but have not decided at this time
+- Table: Returns
+    - I need a table to be able to store ticker performance after all article publication dates so my model can relate stock performance to article sentiment and classify the author
+    - Variables: These are all subject to change
+        - 7dreturn: Stock price change 7 days after article publication
+        - 30dreturn: Stock price change 30 days after the article was published 
+        - 6mreturn: Stock price change 6 months after the article was published
