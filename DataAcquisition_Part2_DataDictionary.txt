@@ -9,6 +9,7 @@ This file is an overview of the current status of the Data Dictionary for this p
         - publisher: Name of the publisher or author. This is important for classification I will be doing 
         - published_at: Time of the publication of the article which is important to comparing to yfinance for performance
         - ticker: Name of the stock the article is about, needed for classification
+        - Headline Class: Category I made that determines whether the headline is analysis, prediction, price movement, or regular news to help with training down the road
 - Table: Sentiment
     - This table is going to store all information gathered from sentiment analysis from each of the articles
     - Variables:
