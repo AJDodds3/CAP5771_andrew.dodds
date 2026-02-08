@@ -1,0 +1,18 @@
+For this week I loaded my data into my ratings.db I assigned last week for just the raw data not the sentiment or yfinance
+data which is something that will be retrived down the line. The raw data includes article_id, headline, headline_class, publisher, ticker, and published_at.
+
+All of the features are raw features and I will be keeping them besides headline_class which is something I added this week based on our conversation
+about how most stock articles are "useless" from a models perspective because if I try to classify how reliable a publisher is and 95% of the data
+is the publisher just listing the stock price then that is not going to give anything meaningfu. In the data there was no missing values,
+every data type is an object (string) besides article_id which is an integer, and each have 107805 values. I verified this in DataExploration.ipynb
+using both pandas methods and sql methods we discussed in class.
+
+Why I am keeping all of the features:
+- article_id: not meaningful for training but nice to have for tracking between my raw data and the database
+- headline: this is a very important feature for sentiment analysis. This is how im going to classify publishers
+- headline_class: I need this feature to filter through all the articles that we are actually going to care about such as analysis and prediction classified articles rather than general news and simple price movement reports.
+- publisher: publisher is important because this is the person/entity that is getting classified based on their headlines.
+- ticker: important for mapping stock performance to a headline
+- published_at: necessary for grabbing stock performance at the right time (article publication and after)
+
+* I have included a screenshot with this commit if .info() called DataExploration_Part1.png

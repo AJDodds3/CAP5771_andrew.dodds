@@ -1,0 +1,15 @@
+All DataExploration can be viewed in DataExploration.ipynb but after going through all the traditional workflows,
+due to the nature of the problem and this data set I did not have any data problems such as missing values,
+duplicate rows, standardization, noise/outliers, or formatting issues. One thing to consider is that the person that made this data set on kaggle
+could have missed scraping certain articles but in terms of the data that is here there are not obvious problems.
+
+There are some things that important to consider moving forward. After our talk last week I created a headline_class
+column that categorizes the headlines into analysis, movement, prediction, and general sections. I did this by
+checking for keywords that commonly appear in each category and iterating through the headline to check for the keywords and 
+assinging the appropriate class. I will talk to you about this methodology next class but it captures the 80% threshold
+we talked about but it is difficult to be perfect considering all the possible keywords for classifications and the meaning behind them.
+This appears in the articles table, headline_class column, and represents 100% of the data. This means that if I missclassified
+the columns my model for classification can be completely wrong down the road.
+
+I think there are some important stakeholder questions despite the nature of the data: How was the data scraped? Is it valid
+for me to classify the headlines? How was news classified and what made the cutoff as news? Does the publisher column represent all news coverage?
