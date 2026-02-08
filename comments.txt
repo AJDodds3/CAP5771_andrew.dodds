@@ -1,0 +1,3 @@
+02/02/26
+  The structure of the db makes sense, however, make sure to work onthe diagram (png) so that it is easier to grasp. Since sentiment might be a new feature that will be created in the future, make sure to communicate that in the diagram.
+  Great job keeping up with the entries. I look forward to seeing your project.
