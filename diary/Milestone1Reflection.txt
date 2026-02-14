@@ -1,0 +1,8 @@
+Overall I am very happy with the direction milestone 1 took me. I also think our conversation two weeks ago made the path
+for this project more clear. I really appreciated the sql portion of the project because even though I do not think
+this project requires extensive sql, I have never actually used it so it was beneficial to learn. The data is in
+a very good spot: clean, classified, no missing values, and contained. The next steps of the project I think are going 
+to be the most important and difficult part. On top of the milestone 2 requirements I will need to actually figure
+out how to do a sentiment analysis of the headlines and add that to my ratings db. Additionally I will have to incorporate
+yFinance stock data in the intervals I set so we can see how stocks performed after the publication date. I want to 
+have a meeting about this because choosing the intervals is going to be crucial for model outputs.
