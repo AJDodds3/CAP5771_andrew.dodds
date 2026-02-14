@@ -1,0 +1,16 @@
+For part 3 of data exploration I had to get creative because my data is not traditional in the sense that the 
+features are necessarily correlated or meaningful. The raw data itself just has the headline, publisher, article,
+ticker, published date, and my categorization for what type of article it is. There is still value in exploring the
+data because it can provide useful information for training down the line. I focused on investigating the headline class, publisher, ticker, and any relationships between the headline type in the publisher or the ticker. I chose these variables because these are the most important factors when it comes time to classify publishers we need to know what ticker they are talking about, what the nature of the article is, and how we can levarage this to train a model to classify the publisher based on the sentiment of the article headlines and the performance of the ticker.
+
+From prior investigations I expected to find that the vast majority of articles are just general news and price
+movement statements, uneven ticker discussion, and varying relationships between type of article and the publisher.
+I found that the headline types were not evenly distributed which was expected, and there were massive imbalances in the amount of articles written per publisher as well as the amount each ticker was discussed. This is something
+I will have to consider for training because I found instances where there was only 1 article from the publisher
+which is not sufficient for training. Based on what we did in class i thought it was appropriate to look for feature to feature relationships and found that 
+different publishers focus on different article types as well as tickers varied in article type that was posted about them. There were certainly no linear relationships between these features.
+
+I was very surprised about the imbalance between publishers and tickers and this is really going to impact modeling. 
+I am going to have to design thresholds for article type, publisher articles published, and ticker discussion counts before
+classifying publishers. There is also the limitation of this being all categorical features where encoding would not really
+make sense either. Because the first milestone is more about containing data I will have to revisit this after sentiment analysis and stock data is added. 
