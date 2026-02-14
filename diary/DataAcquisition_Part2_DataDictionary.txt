@@ -23,3 +23,9 @@ This file is an overview of the current status of the Data Dictionary for this p
         - 7dreturn: Stock price change 7 days after article publication
         - 30dreturn: Stock price change 30 days after the article was published 
         - 6mreturn: Stock price change 6 months after the article was published
+
+Important to note that the returns table is subject to change entirely during the sentiment analysis phase. More specifically,
+the time intervals to analyze the change in price after article publication. For project milestone 1 we are in the data containment phase,
+in the next steps I will be adding the data from yFinance and building a sentiment analysis pipeline as we shift from understanding the data to training.
+
+Data set link: https://www.kaggle.com/datasets/elsabetyemane/financial-news-and-stock-price-integration-dataset

@@ -1,0 +1,13 @@
+As of now the data is going to come from multiple places and this may change depending on how in depth I decide I want to go. 
+The main source of data is going to be the kaggle data set: Financial News and Stock Price Integration Dataset which consists of a headline, url, publisher, date, time, and stock ticker. 
+The other data I need is going to come from yfinance so I can figure out stock performance in time intervals after publishing date, and data I create my self with sentiment analysis from finBert.
+To collect this data I will download and clean the Kaggle dataset, stock price data will be gotten from the yfinance API and added to my table, and the sentiment scores will be computed based on each headline and labeled with each article. 
+One limitation is the data only has the headline of the article which may not accurately reflect the overall sentiment, there will be challenges properly aligning the time of the article published and the intervals of stock price, 
+the data does not include every stock but I am currently leaning towards making sure it includes every article from a certain list of publishers because im strictly focused on publisher classification. 
+
+
+
+
+
+
+Data set link: https://www.kaggle.com/datasets/elsabetyemane/financial-news-and-stock-price-integration-dataset
