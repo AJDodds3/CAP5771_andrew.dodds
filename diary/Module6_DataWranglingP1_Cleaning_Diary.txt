@@ -1,0 +1,26 @@
+There were three main problems that were the focus on this week: Handling the unwanted headline_class types,
+dealing with publishers that have not published enough articles to be classified, and a data type fix on the
+published_at column so that yFinance can actually read the dates when the time comes. Standard problems like 
+missing values, unit mismatch, trimming spaces, impossible values, and duplicates were not relevant to this dataset.
+
+1. Handling unwanted headline_class types: The four headline types are general news, movement, prediction, and analysis.
+70% of the raw data is either general news or movement which do not provide any useful information in terms of 
+classifying publishers. This is because unless the publisher is trying to make a claim or analyze what is happening
+with a company then most of the information is objective and does not speak to their ability to write and report.
+As a result all general news or movement entries were completly removed resulting in only 30,000 rows of 100,000 remaining.
+
+2. Publisher article count: During data exploration, it was revealed that there were a significant amount of publishers
+in the data that had only ever published one article. This is not sufficient to classify them based on their abilities.
+As a result, I investigated and found that the raw data there were 360 total publishers with a mean of 84 articles written 
+and a standard deviation of 364 articles. I dug further and found that at 25 or more articles there are only about 86 publishers left with 28000 total articles among them.
+For now, I am cutting off all publishers with less than 25 articles written because it is just not sufficient for modeling even
+though 25 is also arguably low but this will be discussed later this week. After dropping, the new mean was 335 articles with a standard deviation of 690.
+
+3. published_at date formatting. The dates in the published_at column are all over the place and some even shifted
+by timezone. This is going to make it impossible for yFinance to grab the date and find the stock price at a given date without 
+reformatting and standardizing them. As a result, all dates were shifted to the utc time zone and only the year, day and month were left. 
+
+The main remaining risk looking at the data overall at the moment is how the dates are going to be properly aligned with the market.
+For example I stated earlier that I want a column that has the price of the stock 7 days after publication date. What if publication date 
+did not start on a day the market was open or a holiday? What if the 7 days after publication date ended on a day the market was closed.
+These cutoffs can significantly impact the data and fairness if not standardized and is something im considering going into the next week.
