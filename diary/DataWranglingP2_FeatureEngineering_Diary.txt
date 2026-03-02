@@ -1,0 +1,12 @@
+This week with data wrangling was really interesting and I am pretty happy with the current state. I expect after we 
+talk about exactly how im going to do the modeling/classification I am going to have to change a few things but that
+should not be too much. During feature selection I dropped article_id because that has no value for classification. All
+that matters is the headline, the stock performance, the author, and the headline class. 
+
+I one hot encoded headline_class 0 for prediction 1 for analysis so the feature can be included and have meaning for modeling.
+Additionally, I encoded the publisher size into three distinct buckets 0, 1, and 2 described in data_wrangling_part2.ipynb.
+I did not one hot encode because I wanted to preserve the detail that 2 actually is higher than 0 in this case the numbers are meaningful
+because higher number is higher article count. Lastly, I created the columns for stock price changes over time intervals
+we talked about in class so I can classify the author based on sentiment of the headline and performance of the stock in intervals.
+Before transforming the performance columns there were 28863 rows and after there were 27357 due to delisted tickers
+not having price data. 
