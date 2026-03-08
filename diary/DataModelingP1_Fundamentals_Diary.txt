@@ -1,0 +1,8 @@
+This week for modeling was heavily focused on getting data to model due to scraping issues I was slightly behind. I let my program run in batches with repeats for almost 3 days to get 
+a sizeable amount of text scraped from the articles. Additionally I used FinBert to assign a sentiment score to each article.
+
+I trained a linear regression model mostly to set a benchmark performance and because I wanted to discuss modeling with you now that I am all caught up. I did an 80/20 train test
+split because that is standard. In our ml class we talked about how you might want to do 70/30 for large data sets but those contain at least a million rows which is not the case here.
+Based on the results the model is underfitting which is expected for such a simple model. Additionally, predicting the return is not the correct approach for what I want to do with the 
+dashboard. Even if my data had a lot of information about stocks predicting return would still be hard but I want to classify the publisher based on the sentiment in their articles
+against the performance of the stock and will talk to you this week about the best approach for classification models. 
