@@ -1,0 +1,10 @@
+This file is an overview of the final steps of modeling
+
+I am excited to talk to you in class about the results I got for this week because I think they are actually interesting. I had never
+actually done an unsupervised learning task before this so it was interesting to learn. I used KMeans clustering to group the publishers as 
+a way to understand what kind of publisher they are given my raw data. The standard required steps for this week did not apply
+for unsupervised learning like train test split, the standard evaluation metrics, and confusion matrices. Instead I used a silhouette
+score for my 2 models which is basically a measure of how well they are grouping. My models received 0.18 and 0.187 which is actually 
+not that bad for financial data. My second model had 3 clusters and the first group had strong opinions and almost completely flat performance
+meaning your return following them will be about 0-1%. The second group had extreme negative opinions but tended to be wrong a lot which is really interesting,
+and the last group were the very neutral authors that just state facts and do not offer much meaningful opinion or analysis.
