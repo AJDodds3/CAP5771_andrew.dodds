@@ -1,0 +1,28 @@
+This week I came up with a rough draft for what the visualizations are going to look like on the dashboard. I am quite happy
+with the direction this project has taken the only thing really that are left is cleaning up my clustering and making the visualizations
+more robust as I outined in my data visulization code file. 
+
+The main story that the visualization is trying to comminicate is to be an informational and convenient visual for 
+retail investors that are interested in a ticker, do not have a lot of time, and need a breakdown of the ticker and the 
+publishers behind it pushing information. I want a person that knows nothing but is interested in apple to go to my dashboard,
+understand what type of stock apple is (volatility/whats the public sentiment right now), find information about all the people
+covering apple and be able to narrow their research to a few top and trustyworthy publishers. 
+
+The goal behind this is simply that almost all of the publishers that write about tickers are either bought out by hedge funds,
+have an alternative motive, are garbage AI generated articles, or are generally clueless. If my dashboard can instantly filter out
+the bottom of the barrel publishers so regular people are not led astray then that is an achievement in my opionion. 
+
+Dashboard sketch - It is slightly incomplete at the moment because I want to talk again about clustering
+
+------------------------
+**Ticker selection drop down**
+**Information about the selected ticker (sentiment, historical returns, volatility, articles written about it)**
+
+
+**Clustering visual of the tickers**
+- Selected ticker is highlighted  on the graph
+**Explanation of the tickers cluster**
+
+**Table about the authors and their work for this specific ticker**
+- who the publisher is, how many articles they have written about the ticker, their accuracy, and their sentiment
+------------------------
