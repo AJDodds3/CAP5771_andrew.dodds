@@ -1,4 +1,4 @@
-## Project Milestone 1
+## Project Milestone 2
 
 This repository currently has all of my work for milestone 2. 
 
