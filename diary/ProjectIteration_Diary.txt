@@ -1,0 +1,8 @@
+Summary of the changes I need to make to my dashboard:
+2 Final Plots:
+- Average sentiment on ticker by most accurate source is the x and the y is ticker accuracy by that source
+- pca/clustering of the publishers on accuracy, overally articles and sentiment so users can see how they group
+- Plots need to be dynamic so can click on each point and it updates the dropdown - also style them
+2 Final Tables:
+- table for publisher, articles on ticker, overall articles, overall accuracy and ticker accuracy - styled and dynamic
+- global styled and dynamic table for sentiment and other stats
