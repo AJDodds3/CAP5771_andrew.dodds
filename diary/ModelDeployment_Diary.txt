@@ -1,0 +1,10 @@
+The main difference between joblib and pickle is that pickle can 
+save most python objects and is built in while joblib is more so for
+scikit-learn and works better for large arrays. I used joblib because I used
+scikit-learns StandardScaler, KMeans, and PCA so it made more sense to use joblib with 
+the scikit learn objects. 
+
+As this project evolved the model became much simpler than originally thought. I ended up just using
+basic unsupervised clustering for a plot. My model is reproducible in Model_Deployment.ipynb and all I had to 
+do was load it with joblib and then make sure the data used to make the clustering was the same and 
+I verified that it was the exact same model.
