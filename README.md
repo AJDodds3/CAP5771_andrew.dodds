@@ -1,15 +1,14 @@
-## Project Milestone 2
+## Project Milestone 3
 
-This repository currently has all of my work for milestone 2. 
+This repository currently has all of my work for milestones 1-3. 
 
 The project seeks to classify financial news authors based on a sentiment analysis of article headlines and stock performance.
-Milestone 2 has been focused on clustering tickers and defining accuracy for publishers so that a useful dashboard can be built
-for retail investors.
+Milestone 3 has been focused on finalizing modeling and building a functional interactive dashboard.
 
 ### Instructions
 
 1. pip install all dependencies found in the requirements.txt
-2. Run data_wrangling.ipynb, data_modeling.ipynb, or data_visualization_static.ipynb in any order I purposefully added csvs for each step of the way due to the nature of scraping I wanted to make it easy to use regardless of what file you are exploring.
+2. Run dashboard.ipynb to see the script that is being hosted that builds the dashboard and loads the final model
 
 ### Repository Structure
 
@@ -19,5 +18,11 @@ for retail investors.
   This is not intended to be graded, this is just the work I do for the project every week but not clean and readable.
 - milestone1/
   Submission for milestone 1
+- milestone2/
+  Submission for milestone 2
+- milestone3/
+  Submission for milestone 3 (not including the finalized files that display the dashboard)
 
-The remaining portion of the repository is all meant for milestone 2. No need to open the csvs just run the wrangling, modeling and visualization files.
+The remaining portion of the repository (dashboard.ipynb, data_visualization.csv, and publisher_clustering_model.joblib) are all the finalized files from milestone 3 that are currently displayed on Latte Lab.
+
+Note: I had to wipe my requirements.txt file in order to prevent crashing with the dashboard hosting script. If you wish to review any of the previous milestone work from 1-3 that is not dashboard.ipynb, please use a version of requirements.txt thats older than the 4/16/2026 commit.
