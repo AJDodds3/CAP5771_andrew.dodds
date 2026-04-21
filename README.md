@@ -1,5 +1,8 @@
 ## Project Milestone 3
 
+Live project hosted at: https://latte.eng.ufl.edu/ProjectGallery.html
+Filter by semester: Spring 2026
+
 This repository currently has all of my work for milestones 1-3. 
 
 The project seeks to classify financial news authors based on a sentiment analysis of article headlines and stock performance.
